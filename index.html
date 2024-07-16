@@ -18,7 +18,8 @@
 				align-items: center;
 				justify-content: center;
 				height: 100vh;
-				width: 750px;
+				width: 100vw;
+				max-width: 750px;
 				background-image: url('./img/17.webp');
 				background-size: 100% 100%;
 				margin: 0 auto;
@@ -27,7 +28,7 @@
 				/* opacity: 0; */
 				position: absolute;
 				bottom: 10px;
-				width: 720px;
+				width: 750px;
 				height: 300px;
 			}
 		</style>
@@ -39,7 +40,12 @@
 	</body>
 	<script>
 		var btn = document.getElementsByClassName('btn')
+		document.querySelector('.btn').addEventListener('touchstart', function () {
+			alert(2)
+			window.location.href = `https://uri.amap.com/marker?position=112.818666,28.316595&name=望达小镇基金管理中心&src=mypage&coordinate=gaode&callnative=1`
+		})
 		btn.addEventListener('click', function () {
+			alert(1)
 			window.location.href = `https://uri.amap.com/marker?position=112.818666,28.316595&name=望达小镇基金管理中心&src=mypage&coordinate=gaode&callnative=1`
 		})
 	</script>

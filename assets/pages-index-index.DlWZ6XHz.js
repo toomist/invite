@@ -1,0 +1,1 @@
+import{c as t,o,i as s}from"./index-CI5ZVdX6.js";const n=((t,o)=>{const s=t.__vccOpts||t;for(const[n,e]of o)s[n]=e;return s})({data:()=>({title:"Hello"}),onLoad(){},methods:{}},[["render",function(n,e,a,c,r,d){const f=s;return o(),t(f,{class:"content"})}],["__scopeId","data-v-f1ff7d37"]]);export{n as default};

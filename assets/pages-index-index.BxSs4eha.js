@@ -1,0 +1,1 @@
+import{c as t,o,i as s}from"./index-Ds8xiC4S.js";const n=((t,o)=>{const s=t.__vccOpts||t;for(const[n,c]of o)s[n]=c;return s})({data:()=>({title:"Hello"}),onLoad(){},methods:{}},[["render",function(n,c,e,a,r,d){const f=s;return o(),t(f,{class:"content"})}],["__scopeId","data-v-c5f6bbb8"]]);export{n as default};

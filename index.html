@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="/assets/uni.368685da.css">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			html,
+			body {
+				height: 100vh;
+				width: 100vw;
+				padding: 0;
+				margin: 0;
+			}
 
-    <meta charset="UTF-8" />
-    <script>
-      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
-        CSS.supports('top: constant(a)'))
-      document.write(
-        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
-        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-    </script>
-    <title>invite-app</title>
-    <!--preload-links-->
-    <!--app-context-->
-    <script type="module" crossorigin src="/assets/index-jGqBLDJv.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BgCuxJG8.css">
-  </head>
-  <body>
-    <div id="app"><!--app-html--></div>
-  </body>
+			.app {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				width: 750rpx;
+				background-image: url('./img/17.webp');
+				background-size: 100% 100%;
+				margin: 0 auto;
+			}
+			.btn {
+				/* opacity: 0; */
+				position: absolute;
+				bottom: 10rpx;
+				width: 720rpx;
+				height: 300rpx;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="app">
+			<button class="btn"></button>
+		</div>
+	</body>
+	<script>
+		var btn = document.getElementsByClassName('btn')
+		btn.addEventListener('click', function () {
+			window.location.href = `https://uri.amap.com/marker?position=112.818666,28.316595&name=望达小镇基金管理中心&src=mypage&coordinate=gaode&callnative=1`
+		})
+	</script>
 </html>
